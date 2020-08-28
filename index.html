@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Roger Leonardo</title>
+		<style>
+			body {
+			background-color: lightblue;
+				}
+
+			h1#nome {
+				text-align: center;
+				}
+
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+
+			div {
+					
+					margin: auto;
+					border: 1px solid black;
+				}
+
+			a.click{
+					display: block;
+    				text-decoration: none;
+					}
+
+			#back {
+					position: relative;
+					width: 50vw;
+					height: 50vh;
+					background-color: white;
+					margin-top: 20vh;
+					border-radius: 10px
+					}
+
+			.click{
+						cursor: pointer;
+						width: 20vw;
+						height: 15vh;
+						position: relative;
+						top:30px;
+						text-align: center
+
+					}
+			#c1 {
+				float:left;
+				margin-left: 5px;
+			}
+
+			#c2{
+				float:right;
+				margin-right: 5px;
+			}
+			.descricao {
+							font-size: 32px;
+						}
+			#barra { 
+						position: absolute;
+						width: 50vw;
+						height: 3vh;
+						left: -1;
+						border-radius: 0px 0px 10px 10px;
+						background-color: #696969;
+						bottom: -1;
+					}				
+		</style>
+		<script type="text/javascript">
+			function mudarPag(pag){
+				window.location = pag.getAttribute('value');
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div id="back">
+			<H1 id = "nome">Roger Leonardo Coimbra Silva</h1>
+				<p>Cursando Informática para Internet no IFES</p>
+			<h2> Reposit&oacute;rios: </h2>
+			<div id = "c1" class = "click" onclick = "mudarPag(this)" value = "https://github.com/coi33443/proj_int">
+				<p class = "descricao">Projeto<br>integrador</p>
+			</div>
+			<div id = "c2" class = "click" onclick = "mudarPag(this)" value = "https://github.com/coi33443/progweb2">
+				<p class = "descricao">Prog Web<br>II</p>
+			</div>
+			<div id="barra">
+			</div>
+		</div>
+	</body>
+</html>
